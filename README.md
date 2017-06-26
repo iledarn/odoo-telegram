@@ -24,7 +24,7 @@ Install odoo with telegram modules and dependencies via set of [docker](https://
     -p 8069:8069 \
     -p 8072:8072 \
     -d \
-    --name odoo \
+    --name odoo-finance \
     --network=odoo-telegram \
     -e ODOO_MASTER_PASS=admin \
     -e DB_PORT_5432_TCP_ADDR=db-telegram \
