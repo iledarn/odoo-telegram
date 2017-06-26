@@ -21,20 +21,14 @@ Install odoo with telegram modules and dependencies via set of [docker](https://
     postgres:9.5
 
     docker run \
+    -p 8069:8069 \
+    -p 8072:8072 \
     -d \
     --name odoo \
     --network=odoo-telegram \
     -e ODOO_MASTER_PASS=admin \
     -e DB_PORT_5432_TCP_ADDR=db-telegram \
-    -t itprojectsllc/install-odoo:10.0-telegram -- -d telegram
-
-    # before executing this stop nginx or apache if you have one
-    docker run  \
-    -d \
-    -p 80:80 \
-    --name telegram-nginx \
-    --network=odoo-telegram \
-    -t itprojectsllc/docker-odoo-nginx
+    -t itprojectsllc/install-odoo:10.0-telegram -- -d telegram.iledarn.dev.it-projects.info --db-filter=^%h$
 
 
 Open http://localhost/ (you may need to wait few minutes on first open) and login with login *admin* and password *admin*.
