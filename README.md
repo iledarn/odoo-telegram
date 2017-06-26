@@ -21,8 +21,8 @@ Install odoo with telegram modules and dependencies via set of [docker](https://
     postgres:9.5
 
     docker run \
-    -p 8069:8069 \
-    -p 8072:8072 \
+    -p 8169:8069 \
+    -p 8172:8072 \
     -d \
     --name odoo-finance \
     --network=odoo-telegram \
