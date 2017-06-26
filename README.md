@@ -28,7 +28,7 @@ Install odoo with telegram modules and dependencies via set of [docker](https://
     --network=odoo-telegram \
     -e ODOO_MASTER_PASS=admin \
     -e DB_PORT_5432_TCP_ADDR=db-telegram \
-    -t itprojectsllc/install-odoo:10.0-telegram -- -d telegram.iledarn.dev.it-projects.info --db-filter=^%h$
+    -t itprojectsllc/install-odoo:10.0-telegram -- -d myfinance.tlg.iledarn.dev.it-projects.info --db-filter=^%h$
     
     docker exec -u root -i -t odoo-finance /bin/bash -c "export GIT_PULL=yes; bash /install-odoo-saas.sh"
 
