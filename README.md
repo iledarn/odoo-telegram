@@ -23,7 +23,7 @@ Install odoo with telegram modules and dependencies via set of [docker](https://
     docker run \
     -p 8169:8069 \
     -p 8172:8072 \
-    -v /home/ildar/10/odoo-telegram/:/mnt/addons/it-projects-llc/odoo-telegram/
+    -v /home/ildar/10/odoo-telegram/:/mnt/addons/it-projects-llc/odoo-telegram/ \
     -d \
     --name odoo-finance \
     --network=odoo-telegram \
